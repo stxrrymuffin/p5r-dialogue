@@ -1,0 +1,14 @@
+~ start
+morgana: [[Hi|Hello|Howdy]], this is some dialogue.
+futaba: Here are some choices.
+futaba: make a choice nowww [#emotion=scowling]
+- First one
+	morgana: You picked the first one. [#emotion=surprised]
+	- Start again => start
+	- End the conversation
+- Second one
+	morgana: You picked the second one. [#emotion=scowling]
+	- Start again => start
+	- End the conversation
+morgana: For more information see the online documentation.
+=> END

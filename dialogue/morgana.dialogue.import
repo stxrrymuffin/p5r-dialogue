@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://d4ac41n88lvwf"
+path="res://.godot/imported/morgana.dialogue-0e184690753a15a7f69f7239bdad4b89.tres"
+
+[deps]
+
+source_file="res://dialogue/morgana.dialogue"
+dest_files=["res://.godot/imported/morgana.dialogue-0e184690753a15a7f69f7239bdad4b89.tres"]
+
+[params]
+
+defaults=true
