@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://qammpvxhxf8l"
+path="res://.godot/imported/1-29. Beneath the Mask.mp3-f79cb113541bd4eaa01921fdf1494cd6.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/1-29. Beneath the Mask.mp3"
+dest_files=["res://.godot/imported/1-29. Beneath the Mask.mp3-f79cb113541bd4eaa01921fdf1494cd6.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

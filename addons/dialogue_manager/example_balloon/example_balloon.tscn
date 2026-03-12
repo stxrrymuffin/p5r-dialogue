@@ -1,10 +1,9 @@
-[gd_scene load_steps=48 format=3 uid="uid://73jm5qjy52vq"]
+[gd_scene load_steps=82 format=3 uid="uid://73jm5qjy52vq"]
 
 [ext_resource type="Script" uid="uid://d1wt4ma6055l8" path="res://addons/dialogue_manager/example_balloon/example_balloon.gd" id="1_36de5"]
 [ext_resource type="Texture2D" uid="uid://bhqkq8r4jw2l8" path="res://assets/futaba/0 Neutral/b008_000_04.png" id="2_1337t"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
 [ext_resource type="Texture2D" uid="uid://dwyft0fj5i1ns" path="res://assets/morgana/0 Neutral/b003_000_00.png" id="2_nlsx6"]
-[ext_resource type="Texture2D" uid="uid://dyjxg4jmihyu5" path="res://assets/dialogue/leblanc_blurred.png" id="2_s55h4"]
 [ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/dialogue_responses_menu.gd" id="3_72ixx"]
 [ext_resource type="Texture2D" uid="uid://cw7avc8ihguhf" path="res://assets/futaba/0 Neutral/b008_000_04_m1.png" id="4_1kn55"]
 [ext_resource type="Texture2D" uid="uid://brfy11yyx7tef" path="res://assets/futaba/0 Neutral/b008_000_04_m2.png" id="5_icj72"]
@@ -36,6 +35,40 @@
 [ext_resource type="Texture2D" uid="uid://b8ug4og7kubqi" path="res://assets/morgana/2 Frowning and Scowling/b003_002_00_e1.png" id="25_8dfid"]
 [ext_resource type="Texture2D" uid="uid://okp2p67ll227" path="res://assets/futaba/2 Scowling/b008_002_04_e2.png" id="25_hf7m3"]
 [ext_resource type="Texture2D" uid="uid://c0a0bvvkvhy3k" path="res://assets/morgana/2 Frowning and Scowling/b003_002_00_e2.png" id="26_hf7m3"]
+[ext_resource type="Shader" uid="uid://bm1sf8hufcpgr" path="res://shaders/green_screen.gdshader" id="34_6g7dk"]
+[ext_resource type="Texture2D" uid="uid://ds4qunlpg0ds8" path="res://assets/dialogue/p5dialogue/ezgif-frame-032.jpg" id="34_60p1v"]
+[ext_resource type="Texture2D" uid="uid://cviyppjd8516c" path="res://assets/dialogue/p5dialogue/ezgif-frame-034.jpg" id="36_vuahe"]
+[ext_resource type="Texture2D" uid="uid://dc5ruleoulrhl" path="res://assets/dialogue/p5dialogue/ezgif-frame-003.jpg" id="37_wl0d8"]
+[ext_resource type="Texture2D" uid="uid://cb38tefetfl1n" path="res://assets/dialogue/p5dialogue/ezgif-frame-005.jpg" id="39_mk2um"]
+[ext_resource type="Texture2D" uid="uid://cqr6dfimv5b01" path="res://assets/dialogue/p5dialogue/ezgif-frame-006.jpg" id="40_y2mow"]
+[ext_resource type="Texture2D" uid="uid://dqyi4asxe5co" path="res://assets/dialogue/p5dialogue/ezgif-frame-007.jpg" id="41_pwiyk"]
+[ext_resource type="Texture2D" uid="uid://c852ixsmra50o" path="res://assets/dialogue/p5dialogue/ezgif-frame-008.jpg" id="42_vua1x"]
+[ext_resource type="Texture2D" uid="uid://cl1vmp3hki4qd" path="res://assets/dialogue/p5dialogue/ezgif-frame-009.jpg" id="43_87qbf"]
+[ext_resource type="Texture2D" uid="uid://2l6a8bdeuiws" path="res://assets/dialogue/p5dialogue/ezgif-frame-010.jpg" id="44_3olj8"]
+[ext_resource type="Texture2D" uid="uid://c2y8yyynn8o6q" path="res://assets/dialogue/p5dialogue/ezgif-frame-011.jpg" id="45_ilf4v"]
+[ext_resource type="Texture2D" uid="uid://bi7aiprivdj30" path="res://assets/dialogue/p5dialogue/ezgif-frame-012.jpg" id="46_sljek"]
+[ext_resource type="Texture2D" uid="uid://bru7rmsne8wor" path="res://assets/dialogue/p5dialogue/ezgif-frame-013.jpg" id="47_l4wgk"]
+[ext_resource type="Texture2D" uid="uid://25mfic4e3at0" path="res://assets/dialogue/p5dialogue/ezgif-frame-014.jpg" id="48_odcrq"]
+[ext_resource type="Texture2D" uid="uid://b4yy6kaypxscq" path="res://assets/dialogue/p5dialogue/ezgif-frame-015.jpg" id="49_4nv50"]
+[ext_resource type="Texture2D" uid="uid://ncbh6tnm5uh" path="res://assets/dialogue/p5dialogue/ezgif-frame-016.jpg" id="50_70lob"]
+[ext_resource type="Texture2D" uid="uid://ct2b7scj5ym51" path="res://assets/dialogue/p5dialogue/ezgif-frame-017.jpg" id="51_uxsqd"]
+[ext_resource type="Texture2D" uid="uid://c6e4ljgdqhluj" path="res://assets/dialogue/p5dialogue/ezgif-frame-018.jpg" id="52_jju5b"]
+[ext_resource type="Texture2D" uid="uid://bgkoho0327mmj" path="res://assets/dialogue/p5dialogue/ezgif-frame-019.jpg" id="53_tx3wh"]
+[ext_resource type="Texture2D" uid="uid://cerxlssp0wnig" path="res://assets/dialogue/p5dialogue/ezgif-frame-020.jpg" id="54_cdyoq"]
+[ext_resource type="Texture2D" uid="uid://pyp5jqbuugy0" path="res://assets/dialogue/p5dialogue/ezgif-frame-021.jpg" id="55_xtypo"]
+[ext_resource type="Texture2D" uid="uid://b1ar0nkkq6lk" path="res://assets/dialogue/p5dialogue/ezgif-frame-022.jpg" id="56_3f4cq"]
+[ext_resource type="Texture2D" uid="uid://cttbuxf4uenjg" path="res://assets/dialogue/p5dialogue/ezgif-frame-023.jpg" id="57_441mk"]
+[ext_resource type="Texture2D" uid="uid://b8y0vk8vch6nh" path="res://assets/dialogue/p5dialogue/ezgif-frame-024.jpg" id="58_262hu"]
+[ext_resource type="Texture2D" uid="uid://1q6sb5u6oaj5" path="res://assets/dialogue/p5dialogue/ezgif-frame-025.jpg" id="59_ys5g8"]
+[ext_resource type="Texture2D" uid="uid://c0me30af2ygdd" path="res://assets/dialogue/p5dialogue/ezgif-frame-026.jpg" id="60_k0d13"]
+[ext_resource type="Texture2D" uid="uid://db5pltk6cntof" path="res://assets/dialogue/p5dialogue/ezgif-frame-027.jpg" id="61_284f1"]
+[ext_resource type="Texture2D" uid="uid://xchoyek6oe5f" path="res://assets/dialogue/p5dialogue/ezgif-frame-028.jpg" id="62_mt203"]
+[ext_resource type="Texture2D" uid="uid://dtuxykju0y5wf" path="res://assets/dialogue/p5dialogue/ezgif-frame-029.jpg" id="63_bqtvt"]
+[ext_resource type="Texture2D" uid="uid://c7ruslhoi6ujr" path="res://assets/dialogue/p5dialogue/ezgif-frame-030.jpg" id="64_4msaq"]
+[ext_resource type="FontFile" uid="uid://3iq0qalumavg" path="res://assets/dialogue/Optima nova LT Black Regular.otf" id="66_6g7dk"]
+[ext_resource type="Texture2D" uid="uid://cs44ojapssak5" path="res://assets/dialogue/p5dialogue/ezgif-frame-001.jpg" id="67_wl0d8"]
+[ext_resource type="Texture2D" uid="uid://bbuht1lnoqa2a" path="res://assets/dialogue/p5dialogue/ezgif-frame-002.jpg" id="68_spgdk"]
+[ext_resource type="StyleBox" uid="uid://crgjbnht1ua3e" path="res://shaders/response.tres" id="69_vuahe"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1337t"]
 animations = [{
@@ -80,7 +113,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"futaba_",
-"speed": 3.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -94,7 +127,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"futaba_scowling",
-"speed": 3.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -108,7 +141,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"futaba_surprised",
-"speed": 3.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -122,7 +155,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"morgana_",
-"speed": 3.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -136,7 +169,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"morgana_scowling",
-"speed": 3.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -150,7 +183,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"morgana_surprised",
-"speed": 3.0
+"speed": 5.0
 }]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_2jjgm"]
@@ -161,70 +194,223 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 2.0,
+"duration": 0.5,
+"texture": ExtResource("7_83g4i")
+}, {
+"duration": 1.0,
 "texture": ExtResource("8_exrs5")
 }, {
 "duration": 0.5,
 "texture": ExtResource("7_83g4i")
+}, {
+"duration": 4.0,
+"texture": ExtResource("8_exrs5")
 }],
 "loop": true,
 "name": &"futaba_",
-"speed": 1.0
+"speed": 2.0
 }, {
 "frames": [{
+"duration": 0.5,
+"texture": ExtResource("24_8dfid")
+}, {
 "duration": 2.0,
 "texture": ExtResource("25_hf7m3")
 }, {
 "duration": 0.5,
 "texture": ExtResource("24_8dfid")
+}, {
+"duration": 4.0,
+"texture": ExtResource("25_hf7m3")
 }],
 "loop": true,
 "name": &"futaba_scowling",
-"speed": 1.0
+"speed": 2.0
 }, {
 "frames": [{
+"duration": 0.5,
+"texture": ExtResource("21_s55h4")
+}, {
 "duration": 2.0,
 "texture": ExtResource("22_c7uhq")
 }, {
 "duration": 0.5,
 "texture": ExtResource("21_s55h4")
+}, {
+"duration": 4.0,
+"texture": ExtResource("22_c7uhq")
 }],
 "loop": true,
 "name": &"futaba_surprised",
-"speed": 1.0
+"speed": 2.0
 }, {
 "frames": [{
+"duration": 0.5,
+"texture": ExtResource("12_2jjgm")
+}, {
 "duration": 2.0,
 "texture": ExtResource("9_o6t3l")
 }, {
 "duration": 0.5,
 "texture": ExtResource("12_2jjgm")
+}, {
+"duration": 4.0,
+"texture": ExtResource("9_o6t3l")
 }],
 "loop": true,
 "name": &"morgana_",
-"speed": 1.0
+"speed": 2.0
 }, {
 "frames": [{
+"duration": 0.5,
+"texture": ExtResource("25_8dfid")
+}, {
 "duration": 2.0,
 "texture": ExtResource("26_hf7m3")
 }, {
 "duration": 0.5,
 "texture": ExtResource("25_8dfid")
+}, {
+"duration": 4.0,
+"texture": ExtResource("26_hf7m3")
 }],
 "loop": true,
 "name": &"morgana_scowling",
-"speed": 1.0
+"speed": 2.0
 }, {
 "frames": [{
+"duration": 0.5,
+"texture": ExtResource("10_28mx0")
+}, {
 "duration": 2.0,
 "texture": ExtResource("11_kg7lv")
 }, {
 "duration": 0.5,
 "texture": ExtResource("10_28mx0")
+}, {
+"duration": 4.0,
+"texture": ExtResource("11_kg7lv")
 }],
 "loop": true,
 "name": &"morgana_surprised",
-"speed": 1.0
+"speed": 2.0
+}]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6g7dk"]
+shader = ExtResource("34_6g7dk")
+shader_parameter/key_color = Color(0.071, 1, 0.176, 1)
+shader_parameter/threshold = 0.618
+shader_parameter/smoothing = 0.561
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w4rdd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("34_60p1v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_vuahe")
+}],
+"loop": false,
+"name": &"fade",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("40_y2mow")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_pwiyk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_vua1x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_87qbf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_mk2um")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_3olj8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_ilf4v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_sljek")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_l4wgk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_odcrq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_4nv50")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_70lob")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_uxsqd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_jju5b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_tx3wh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_cdyoq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_xtypo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_3f4cq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_441mk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_262hu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_ys5g8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_k0d13")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_284f1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_mt203")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_bqtvt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_4msaq")
+}],
+"loop": true,
+"name": &"loop",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("67_wl0d8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_spgdk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_wl0d8")
+}],
+"loop": false,
+"name": &"start",
+"speed": 10.0
 }]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spyqn"]
@@ -286,56 +472,28 @@ MarginContainer/constants/margin_right = 30
 MarginContainer/constants/margin_top = 15
 PanelContainer/styles/panel = SubResource("StyleBoxFlat_qkmqt")
 
-[sub_resource type="Animation" id="Animation_nlsx6"]
-length = 0.001
-tracks/0/type = "bezier"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Progress:position:y")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"handle_modes": PackedInt32Array(0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
-"times": PackedFloat32Array(0)
-}
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wl0d8"]
 
-[sub_resource type="Animation" id="Animation_qkmqt"]
-resource_name = "progress"
-loop_mode = 1
-step = 0.1
-tracks/0/type = "bezier"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Progress:position:y")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"handle_modes": PackedInt32Array(0, 0, 0, 0, 0),
-"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.2, -0.0157438, -4, -0.2, 0.0112069, 0.25, 0, -4, -0.25, 0, 0.25, 0, 0, -0.2, 0.00299701, 0.25, 0),
-"times": PackedFloat32Array(0, 0.1, 0.5, 0.6, 1)
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_1337t"]
-_data = {
-&"RESET": SubResource("Animation_nlsx6"),
-&"progress": SubResource("Animation_qkmqt")
-}
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wl0d8"]
+content_margin_top = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
 
 [node name="ExampleBalloon" type="CanvasLayer"]
 layer = 100
 script = ExtResource("1_36de5")
 
-[node name="Background" type="TextureRect" parent="."]
-offset_left = -69.0
-offset_top = -5.0
-offset_right = 3131.0
-offset_bottom = 1669.0
-scale = Vector2(0.402978, 0.402978)
-texture = ExtResource("2_s55h4")
-
 [node name="Portrait" type="Node2D" parent="."]
-position = Vector2(-140, 138)
+position = Vector2(-121, 130)
 scale = Vector2(1.12057, 1.12057)
 
 [node name="Base" type="AnimatedSprite2D" parent="Portrait"]
@@ -348,12 +506,18 @@ animation = &"morgana"
 position = Vector2(297, 314)
 scale = Vector2(0.998872, 0.998872)
 sprite_frames = SubResource("SpriteFrames_mfr5y")
-animation = &"morgana_"
 
 [node name="Eyes" type="AnimatedSprite2D" parent="Portrait"]
 position = Vector2(319, 144)
 sprite_frames = SubResource("SpriteFrames_2jjgm")
-animation = &"morgana_"
+animation = &"morgana_surprised"
+
+[node name="Dialogue Box" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_6g7dk")
+position = Vector2(689.16, 525)
+scale = Vector2(0.723083, 0.723083)
+sprite_frames = SubResource("SpriteFrames_w4rdd")
+animation = &"loop"
 
 [node name="Balloon" type="Control" parent="."]
 unique_name_in_owner = true
@@ -361,9 +525,31 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -1.84033
+offset_top = 56.0
+offset_right = -1.84033
+offset_bottom = 56.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_qq3yp")
+
+[node name="CharacterLabel" type="RichTextLabel" parent="Balloon"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 426.84
+offset_top = 401.0
+offset_right = 618.84
+offset_bottom = 429.0
+rotation = -0.288718
+mouse_filter = 1
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("66_6g7dk")
+theme_override_font_sizes/normal_font_size = 25
+bbcode_enabled = true
+text = "C [bgcolor=black][color=white]h[/color][/bgcolor] aracter"
+fit_content = true
+scroll_active = false
+horizontal_alignment = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="Balloon"]
 layout_mode = 1
@@ -371,10 +557,10 @@ anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 368.0
-offset_top = -245.0
-offset_right = 16.0
-offset_bottom = -26.0
+offset_left = 434.84
+offset_top = -237.0
+offset_right = -117.16
+offset_bottom = -78.0
 grow_horizontal = 2
 grow_vertical = 0
 
@@ -382,6 +568,7 @@ grow_vertical = 0
 clip_children = 2
 layout_mode = 2
 mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxEmpty_wl0d8")
 
 [node name="MarginContainer" type="MarginContainer" parent="Balloon/MarginContainer/PanelContainer"]
 layout_mode = 2
@@ -393,36 +580,14 @@ layout_mode = 2
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="CharacterLabel" type="RichTextLabel" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer/VBoxContainer"]
-unique_name_in_owner = true
-modulate = Color(1, 1, 1, 0.501961)
-layout_mode = 2
-mouse_filter = 1
-bbcode_enabled = true
-text = "Character"
-fit_content = true
-scroll_active = false
-
 [node name="DialogueLabel" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer/VBoxContainer" instance=ExtResource("2_a8ve6")]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_fonts/normal_font = ExtResource("66_6g7dk")
+theme_override_font_sizes/normal_font_size = 26
 text = "Dialogue..."
-
-[node name="Control" type="Control" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer"]
-custom_minimum_size = Vector2(20, 10)
-layout_mode = 2
-size_flags_vertical = 8
-
-[node name="Progress" type="Polygon2D" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer/Control"]
-unique_name_in_owner = true
-polygon = PackedVector2Array(0, 0, 10, 10, 20, 0)
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Balloon/MarginContainer/PanelContainer/MarginContainer/HBoxContainer/Control"]
-libraries = {
-&"": SubResource("AnimationLibrary_1337t")
-}
-autoplay = "progress"
+vertical_alignment = 1
 
 [node name="ResponsesMenu" type="VBoxContainer" parent="Balloon" node_paths=PackedStringArray("response_template")]
 unique_name_in_owner = true
@@ -432,24 +597,32 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -36.0
-offset_top = -26.0
-offset_right = 545.0
-offset_bottom = 44.0
+offset_left = -18.1597
+offset_top = -179.0
+offset_right = 562.84
+offset_bottom = -109.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 8
-theme_override_constants/separation = 2
+theme_override_constants/separation = 20
 alignment = 1
 script = ExtResource("3_72ixx")
 response_template = NodePath("ResponseExample")
 
 [node name="ResponseExample" type="Button" parent="Balloon/ResponsesMenu"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("66_6g7dk")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/hover = SubResource("StyleBoxFlat_wl0d8")
+theme_override_styles/normal = ExtResource("69_vuahe")
 text = "Response example"
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
 
+[connection signal="animation_finished" from="Dialogue Box" to="." method="_on_dialogue_box_animation_finished"]
 [connection signal="gui_input" from="Balloon" to="." method="_on_balloon_gui_input"]
 [connection signal="response_selected" from="Balloon/ResponsesMenu" to="." method="_on_responses_menu_response_selected"]
+[connection signal="pressed" from="Balloon/ResponsesMenu/ResponseExample" to="." method="_on_response_example_pressed"]

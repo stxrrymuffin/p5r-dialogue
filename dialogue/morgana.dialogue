@@ -1,14 +1,14 @@
 ~ start
-morgana: [[Hi|Hello|Howdy]], this is some dialogue.
-futaba: Here are some choices.
-futaba: make a choice nowww [#emotion=scowling]
+Morgana: [[Hi|Hello|Howdy]], [wave]this is some dialogue.[/wave] [#voice=00139]
+Futaba: Here are some choices. [#voice=01636]
+Futaba: [shake rate=20.0 level=10]Make a choice nowww !![/shake] [#emotion=scowling] [#voice=01665]
 - First one
-	morgana: You picked the first one. [#emotion=surprised]
+	Morgana: You picked the first one. [#emotion=surprised] [#voice=00179]
 	- Start again => start
 	- End the conversation
 - Second one
-	morgana: You picked the second one. [#emotion=scowling]
+	Morgana: You picked the second one. [#emotion=scowling] [#voice=00183]
 	- Start again => start
 	- End the conversation
-morgana: For more information see the online documentation.
+Morgana: For more information see the online documentation.[#voice=00222]
 => END

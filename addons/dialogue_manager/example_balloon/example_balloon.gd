@@ -9,6 +9,9 @@ var portrait_pos: Dictionary = {
 	"morgana" : [Vector2(297,314), Vector2(319, 144)]
 }
 
+## CHANGE: storing previous speaking character:
+var past_char: String = ""
+
 
 ## The dialogue resource
 @export var dialogue_resource: DialogueResource
@@ -75,9 +78,6 @@ var mutation_cooldown: Timer = Timer.new()
 ## The menu of responses
 @onready var responses_menu: DialogueResponsesMenu = %ResponsesMenu
 
-## Indicator to show that player can progress dialogue.
-@onready var progress: Polygon2D = %Progress
-
 
 func _ready() -> void:
 	balloon.hide()
@@ -94,12 +94,6 @@ func _ready() -> void:
 		if not is_instance_valid(dialogue_resource):
 			assert(false, DMConstants.get_error_message(DMConstants.ERR_MISSING_RESOURCE_FOR_AUTOSTART))
 		start()
-
-
-func _process(delta: float) -> void:
-	if is_instance_valid(dialogue_line):
-		progress.visible = not dialogue_label.is_typing and dialogue_line.responses.size() == 0 and not dialogue_line.has_tag("voice")
-
 
 func _unhandled_input(_event: InputEvent) -> void:
 	# Only the balloon is allowed to handle input while it's showing
@@ -133,23 +127,22 @@ func start(with_dialogue_resource: DialogueResource = null, title: String = "", 
 func apply_dialogue_line() -> void:
 	mutation_cooldown.stop()
 
-	progress.hide()
 	is_waiting_for_input = false
 	balloon.focus_mode = Control.FOCUS_ALL
 	balloon.grab_focus()
-
-	character_label.visible = not dialogue_line.character.is_empty()
-	character_label.text = tr(dialogue_line.character, "dialogue")
 
 	dialogue_label.hide()
 	dialogue_label.dialogue_line = dialogue_line
 
 	responses_menu.hide()
 	responses_menu.responses = dialogue_line.responses
-
-	# Show our balloon
-	balloon.show()
-	will_hide_balloon = false
+	
+	character_label.visible = false
+	
+	## CHANGE: play fade animation for dialogue box
+	if dialogue_line.character.to_lower() != past_char:
+		$"Dialogue Box".play("fade")
+		await $"Dialogue Box".animation_finished
 	
 	## CHANGE: spawning correct character portrait & animation
 	if $Portrait/Base.sprite_frames.has_animation(dialogue_line.character.to_lower()):
@@ -162,23 +155,39 @@ func apply_dialogue_line() -> void:
 		for node in [$Portrait/Base, $Portrait/Mouth, $Portrait/Eyes]:
 			node.play("default")
 	
-	## CHANGE: creating dialogue animation
-	var tween = create_tween()
-	tween.tween_property($Portrait, "position", $Portrait.position + Vector2(0, -20), 0.15)
-	tween.chain().tween_property($Portrait, "position", $Portrait.position, 0.15)
+	## CHANGE: creating dialogue box animation
+	if dialogue_line.character.to_lower() != past_char:
+		## CHANGE: creating dialogue animation
+		var tween = create_tween()
+		tween.tween_property($Portrait, "position", $Portrait.position + Vector2(-20, 0), 0)
+		tween.chain().tween_property($Portrait, "position", $Portrait.position, 0.15)
+		
+		$"Dialogue Box".play("start")
+		await $"Dialogue Box".animation_finished
+		past_char = dialogue_line.character.to_lower()
+		
+	## CHANGE: loading + playing audio if tag exists
+	if dialogue_line.has_tag("voice"):
+		audio_stream_player.stream = load("res://assets/audio/" + dialogue_line.character.to_lower() + "/" + dialogue_line.get_tag_value("voice") + "_streaming_dec.wav")
+		audio_stream_player.play()
+		
+	$"Dialogue Box".play("loop")
+	
+	character_label.visible = not dialogue_line.character.is_empty()
+	var char_label_text = tr(dialogue_line.character, "dialogue")
+	character_label.text = char_label_text[0] + " [bgcolor=black][color=white]" + char_label_text[1] + "[/color][/bgcolor] " + char_label_text.substr(2,len(char_label_text))
+	
+	# Show our balloon
+	balloon.show()
+	will_hide_balloon = false
 
 	dialogue_label.show()
 	if not dialogue_line.text.is_empty():
 		dialogue_label.type_out()
 		await dialogue_label.finished_typing
-
+		
 	# Wait for next line
-	if dialogue_line.has_tag("voice"):
-		audio_stream_player.stream = load(dialogue_line.get_tag_value("voice"))
-		audio_stream_player.play()
-		await audio_stream_player.finished
-		next(dialogue_line.next_id)
-	elif dialogue_line.responses.size() > 0:
+	if dialogue_line.responses.size() > 0:
 		balloon.focus_mode = Control.FOCUS_NONE
 		responses_menu.show()
 	elif dialogue_line.time != "":
@@ -235,7 +244,10 @@ func _on_balloon_gui_input(event: InputEvent) -> void:
 
 
 func _on_responses_menu_response_selected(response: DialogueResponse) -> void:
+	$AudioStreamPlayer2.stream = load("res://assets/audio/00104.wav")
+	$AudioStreamPlayer2.play()
+	print("called")
+	await $AudioStreamPlayer2.finished
 	next(response.next_id)
-
 
 #endregion
