@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://biapyaaapoqrb"]
+[gd_scene load_steps=5 format=3 uid="uid://biapyaaapoqrb"]
 
 [ext_resource type="Script" uid="uid://6b26w1clbtxp" path="res://scenes/main.gd" id="1_o5qli"]
 [ext_resource type="Texture2D" uid="uid://dyjxg4jmihyu5" path="res://assets/dialogue/leblanc_blurred.png" id="2_0wfyh"]
 [ext_resource type="AudioStream" uid="uid://qammpvxhxf8l" path="res://assets/audio/1-29. Beneath the Mask.mp3" id="3_sugp2"]
+[ext_resource type="FontFile" uid="uid://3iq0qalumavg" path="res://assets/dialogue/Optima nova LT Black Regular.otf" id="4_jyhfs"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_o5qli")
@@ -17,5 +18,36 @@ texture = ExtResource("2_0wfyh")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_sugp2")
-volume_db = -20.0
 autoplay = true
+
+[node name="CheckButton" type="CheckButton" parent="."]
+offset_left = 773.0
+offset_top = 5.0
+offset_right = 928.0
+offset_bottom = 50.0
+size_flags_vertical = 0
+theme_override_fonts/font = ExtResource("4_jyhfs")
+theme_override_font_sizes/font_size = 30
+text = "Check 1"
+alignment = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 935.0
+offset_top = 6.0
+offset_right = 1132.0
+offset_bottom = 70.0
+theme_override_fonts/normal_font = ExtResource("4_jyhfs")
+theme_override_font_sizes/normal_font_size = 32
+text = "Num2:   3"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 1090.0
+offset_top = 2.0
+offset_right = 1136.0
+offset_bottom = 49.0
+theme_override_fonts/font = ExtResource("4_jyhfs")
+theme_override_font_sizes/font_size = 32
+text = "+1"
+
+[connection signal="toggled" from="CheckButton" to="." method="_on_check_button_toggled"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

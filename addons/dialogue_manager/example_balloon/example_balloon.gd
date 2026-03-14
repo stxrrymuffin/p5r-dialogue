@@ -6,7 +6,10 @@ class_name DialogueManagerExampleBalloon extends CanvasLayer
 ## character: [mouth_pos, eyes_pos]
 var portrait_pos: Dictionary = {
 	"futaba" : [Vector2(342, 361), Vector2(404, 248)],
-	"morgana" : [Vector2(297,314), Vector2(319, 144)]
+	"morgana" : [Vector2(297,314), Vector2(319, 144)],
+	"akechi": [Vector2(290, 353), Vector2(348,241)],
+	"ryuji": [Vector2(371,335), Vector2(397,236)],
+	"default": [Vector2.ZERO, Vector2.ZERO]
 }
 
 ## CHANGE: storing previous speaking character:
@@ -246,7 +249,6 @@ func _on_balloon_gui_input(event: InputEvent) -> void:
 func _on_responses_menu_response_selected(response: DialogueResponse) -> void:
 	$AudioStreamPlayer2.stream = load("res://assets/audio/00104.wav")
 	$AudioStreamPlayer2.play()
-	print("called")
 	await $AudioStreamPlayer2.finished
 	next(response.next_id)
 

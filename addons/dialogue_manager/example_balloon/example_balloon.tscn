@@ -1,26 +1,37 @@
-[gd_scene load_steps=82 format=3 uid="uid://73jm5qjy52vq"]
+[gd_scene load_steps=118 format=3 uid="uid://73jm5qjy52vq"]
 
 [ext_resource type="Script" uid="uid://d1wt4ma6055l8" path="res://addons/dialogue_manager/example_balloon/example_balloon.gd" id="1_36de5"]
+[ext_resource type="Texture2D" uid="uid://4fkc0erc0d2l" path="res://assets/akechi/9 Party Member/1 White collar shirt and tie/1 Grinning with eyes closed/b009_001_01.png" id="2_284f1"]
 [ext_resource type="Texture2D" uid="uid://bhqkq8r4jw2l8" path="res://assets/futaba/0 Neutral/b008_000_04.png" id="2_1337t"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
 [ext_resource type="Texture2D" uid="uid://dwyft0fj5i1ns" path="res://assets/morgana/0 Neutral/b003_000_00.png" id="2_nlsx6"]
 [ext_resource type="Script" uid="uid://bb52rsfwhkxbn" path="res://addons/dialogue_manager/dialogue_responses_menu.gd" id="3_72ixx"]
 [ext_resource type="Texture2D" uid="uid://cw7avc8ihguhf" path="res://assets/futaba/0 Neutral/b008_000_04_m1.png" id="4_1kn55"]
+[ext_resource type="Texture2D" uid="uid://c8gb2er5wfqo3" path="res://assets/ryuji/1 Red Shirt/0 Neutral/b002_000_01.png" id="5_3olj8"]
+[ext_resource type="Texture2D" uid="uid://cyvp4vch35hhn" path="res://assets/akechi/9 Party Member/1 White collar shirt and tie/4 Surprised/b009_004_01_m1.png" id="5_87qbf"]
 [ext_resource type="Texture2D" uid="uid://brfy11yyx7tef" path="res://assets/futaba/0 Neutral/b008_000_04_m2.png" id="5_icj72"]
+[ext_resource type="Texture2D" uid="uid://bytfd3hp7od21" path="res://assets/akechi/9 Party Member/1 White collar shirt and tie/4 Surprised/b009_004_01_m2.png" id="6_3olj8"]
+[ext_resource type="Texture2D" uid="uid://hnr0du77c5gk" path="res://assets/akechi/9 Party Member/1 White collar shirt and tie/1 Grinning with eyes closed/b009_001_01_m1.png" id="6_284f1"]
 [ext_resource type="Texture2D" uid="uid://b6ftydj7u27q3" path="res://assets/futaba/0 Neutral/b008_000_04_m3.png" id="6_wbrl0"]
 [ext_resource type="Texture2D" uid="uid://pmm8vv762pw" path="res://assets/futaba/0 Neutral/b008_000_04_e1.png" id="7_83g4i"]
 [ext_resource type="Texture2D" uid="uid://d1qe25asig1cl" path="res://assets/morgana/0 Neutral/b003_000_00_m1.png" id="7_exrs5"]
+[ext_resource type="Texture2D" uid="uid://c05c7rs7lt37c" path="res://assets/akechi/9 Party Member/1 White collar shirt and tie/4 Surprised/b009_004_01_m3.png" id="7_ilf4v"]
+[ext_resource type="Texture2D" uid="uid://dok4qehjxvecb" path="res://assets/akechi/9 Party Member/1 White collar shirt and tie/1 Grinning with eyes closed/b009_001_01_m2.png" id="7_mt203"]
 [ext_resource type="Texture2D" uid="uid://ctqj5idalbi6e" path="res://assets/futaba/4 Surprised/b008_004_04_m1.png" id="7_qk5cg"]
 [ext_resource type="Texture2D" uid="uid://c1ardkth77ix" path="res://assets/futaba/2 Scowling/b008_002_04_m1.png" id="7_uylda"]
+[ext_resource type="Texture2D" uid="uid://dyqlfwvaigd1r" path="res://assets/akechi/9 Party Member/1 White collar shirt and tie/1 Grinning with eyes closed/b009_001_01_m3.png" id="8_bqtvt"]
 [ext_resource type="Texture2D" uid="uid://c7il4k8vv8ni2" path="res://assets/futaba/0 Neutral/b008_000_04_e2.png" id="8_exrs5"]
 [ext_resource type="Texture2D" uid="uid://udyej08x3t7y" path="res://assets/futaba/4 Surprised/b008_004_04_m2.png" id="8_m3tkg"]
 [ext_resource type="Texture2D" uid="uid://dgv3wb7jmr3md" path="res://assets/morgana/0 Neutral/b003_000_00_m2.png" id="8_o6t3l"]
 [ext_resource type="Texture2D" uid="uid://bttirf5js6t71" path="res://assets/futaba/2 Scowling/b008_002_04_m2.png" id="8_s55h4"]
 [ext_resource type="Texture2D" uid="uid://2fy1bpmtylxo" path="res://assets/futaba/2 Scowling/b008_002_04_m3.png" id="9_c7uhq"]
 [ext_resource type="Texture2D" uid="uid://d605vadobxfr" path="res://assets/morgana/0 Neutral/b003_000_00_m3.png" id="9_mfr5y"]
+[ext_resource type="Texture2D" uid="uid://cljdvoqv82c3j" path="res://assets/akechi/9 Party Member/1 White collar shirt and tie/5 Grimacing with eyes closed/b009_005_01_m1.png" id="9_mt203"]
 [ext_resource type="Texture2D" uid="uid://cqudms5jv3yy2" path="res://assets/morgana/0 Neutral/b003_000_00_e2.png" id="9_o6t3l"]
 [ext_resource type="Texture2D" uid="uid://bspaicv2gruua" path="res://assets/futaba/4 Surprised/b008_004_04_m3.png" id="9_saxat"]
 [ext_resource type="Texture2D" uid="uid://c2wfcgwofiboc" path="res://assets/morgana/4 Surprised/b003_004_00_e1.png" id="10_28mx0"]
+[ext_resource type="Texture2D" uid="uid://b6w2jphksbyol" path="res://assets/akechi/9 Party Member/1 White collar shirt and tie/5 Grimacing with eyes closed/b009_005_01_m2.png" id="10_bqtvt"]
+[ext_resource type="Texture2D" uid="uid://b11og0cluwxmx" path="res://assets/akechi/9 Party Member/1 White collar shirt and tie/5 Grimacing with eyes closed/b009_005_01_m3.png" id="11_4msaq"]
 [ext_resource type="Texture2D" uid="uid://be48kq1utvsq2" path="res://assets/morgana/4 Surprised/b003_004_00_e2.png" id="11_kg7lv"]
 [ext_resource type="Texture2D" uid="uid://c7nkmwoubmwiq" path="res://assets/morgana/0 Neutral/b003_000_00_e1.png" id="12_2jjgm"]
 [ext_resource type="Texture2D" uid="uid://i0iouf8ib3jy" path="res://assets/morgana/2 Frowning and Scowling/b003_002_00_m1.png" id="13_74g26"]
@@ -29,23 +40,42 @@
 [ext_resource type="Texture2D" uid="uid://3xqwdxgi8xhk" path="res://assets/morgana/4 Surprised/b003_004_00_m1.png" id="16_qreyp"]
 [ext_resource type="Texture2D" uid="uid://cddgnq7iiejt7" path="res://assets/morgana/4 Surprised/b003_004_00_m2.png" id="17_nqjmj"]
 [ext_resource type="Texture2D" uid="uid://hs3jmuxh7ekm" path="res://assets/morgana/4 Surprised/b003_004_00_m3.png" id="18_wki63"]
+[ext_resource type="Texture2D" uid="uid://nru317n1ey47" path="res://assets/futaba/3 Frowning/b008_003_04_m1.png" id="18_yfdyw"]
+[ext_resource type="Texture2D" uid="uid://dx1bxikcleo03" path="res://assets/futaba/3 Frowning/b008_003_04_m2.png" id="19_syu7e"]
+[ext_resource type="Texture2D" uid="uid://schi8cbqslgh" path="res://assets/futaba/3 Frowning/b008_003_04_m3.png" id="20_8e1s1"]
 [ext_resource type="Texture2D" uid="uid://1qgpd0pdg2xe" path="res://assets/futaba/4 Surprised/b008_004_04_e1.png" id="21_s55h4"]
 [ext_resource type="Texture2D" uid="uid://diyefpg66a2xy" path="res://assets/futaba/4 Surprised/b008_004_04_e2.png" id="22_c7uhq"]
 [ext_resource type="Texture2D" uid="uid://ydfk0peyc5py" path="res://assets/futaba/2 Scowling/b008_002_04_e1.png" id="24_8dfid"]
 [ext_resource type="Texture2D" uid="uid://b8ug4og7kubqi" path="res://assets/morgana/2 Frowning and Scowling/b003_002_00_e1.png" id="25_8dfid"]
 [ext_resource type="Texture2D" uid="uid://okp2p67ll227" path="res://assets/futaba/2 Scowling/b008_002_04_e2.png" id="25_hf7m3"]
 [ext_resource type="Texture2D" uid="uid://c0a0bvvkvhy3k" path="res://assets/morgana/2 Frowning and Scowling/b003_002_00_e2.png" id="26_hf7m3"]
+[ext_resource type="Texture2D" uid="uid://dba08r7dcj10t" path="res://assets/akechi/9 Party Member/1 White collar shirt and tie/4 Surprised/b009_004_01_e2.png" id="26_sljek"]
+[ext_resource type="Texture2D" uid="uid://rxqp62co4evk" path="res://assets/akechi/9 Party Member/1 White collar shirt and tie/4 Surprised/b009_004_01_e1.png" id="27_l4wgk"]
+[ext_resource type="Texture2D" uid="uid://kx1bpx1ig8eu" path="res://assets/ryuji/1 Red Shirt/0 Neutral/b002_000_01_m1.png" id="27_odcrq"]
+[ext_resource type="Texture2D" uid="uid://dtpn1l3m2ma5s" path="res://assets/ryuji/1 Red Shirt/0 Neutral/b002_000_01_m2.png" id="28_4nv50"]
+[ext_resource type="Texture2D" uid="uid://df4f8h7qf1mvm" path="res://assets/ryuji/1 Red Shirt/0 Neutral/b002_000_01_m3.png" id="29_70lob"]
+[ext_resource type="Texture2D" uid="uid://mho3nbl41gqs" path="res://assets/akechi/9 Party Member/1 White collar shirt and tie/3 Frowning/b009_003_01_e1.png" id="33_3f4cq"]
+[ext_resource type="Texture2D" uid="uid://cwdc2d8ngwlov" path="res://assets/ryuji/1 Red Shirt/1 Grinning/b002_001_01_m1.png" id="33_262hu"]
 [ext_resource type="Shader" uid="uid://bm1sf8hufcpgr" path="res://shaders/green_screen.gdshader" id="34_6g7dk"]
 [ext_resource type="Texture2D" uid="uid://ds4qunlpg0ds8" path="res://assets/dialogue/p5dialogue/ezgif-frame-032.jpg" id="34_60p1v"]
+[ext_resource type="Texture2D" uid="uid://bvhospcjtgw8p" path="res://assets/akechi/9 Party Member/1 White collar shirt and tie/3 Frowning/b009_003_01_e2.png" id="34_441mk"]
+[ext_resource type="Texture2D" uid="uid://c1j1yhbrmc6np" path="res://assets/ryuji/1 Red Shirt/1 Grinning/b002_001_01_m2.png" id="34_ys5g8"]
+[ext_resource type="Texture2D" uid="uid://dajl55s8a4p6d" path="res://assets/ryuji/1 Red Shirt/1 Grinning/b002_001_01_m3.png" id="35_k0d13"]
+[ext_resource type="Texture2D" uid="uid://cioiae5thsmui" path="res://assets/ryuji/1 Red Shirt/4 Surprised/b002_004_01_m1.png" id="36_i7sqd"]
 [ext_resource type="Texture2D" uid="uid://cviyppjd8516c" path="res://assets/dialogue/p5dialogue/ezgif-frame-034.jpg" id="36_vuahe"]
+[ext_resource type="Texture2D" uid="uid://c8xyuktkajdj6" path="res://assets/ryuji/1 Red Shirt/4 Surprised/b002_004_01_m2.png" id="37_hdmc4"]
 [ext_resource type="Texture2D" uid="uid://dc5ruleoulrhl" path="res://assets/dialogue/p5dialogue/ezgif-frame-003.jpg" id="37_wl0d8"]
+[ext_resource type="Texture2D" uid="uid://5b4joe2mdc" path="res://assets/ryuji/1 Red Shirt/4 Surprised/b002_004_01_m3.png" id="38_cbt7t"]
 [ext_resource type="Texture2D" uid="uid://cb38tefetfl1n" path="res://assets/dialogue/p5dialogue/ezgif-frame-005.jpg" id="39_mk2um"]
+[ext_resource type="Texture2D" uid="uid://d2eccal4kkvbn" path="res://assets/dialogue/Empty.png" id="39_mt203"]
 [ext_resource type="Texture2D" uid="uid://cqr6dfimv5b01" path="res://assets/dialogue/p5dialogue/ezgif-frame-006.jpg" id="40_y2mow"]
 [ext_resource type="Texture2D" uid="uid://dqyi4asxe5co" path="res://assets/dialogue/p5dialogue/ezgif-frame-007.jpg" id="41_pwiyk"]
 [ext_resource type="Texture2D" uid="uid://c852ixsmra50o" path="res://assets/dialogue/p5dialogue/ezgif-frame-008.jpg" id="42_vua1x"]
 [ext_resource type="Texture2D" uid="uid://cl1vmp3hki4qd" path="res://assets/dialogue/p5dialogue/ezgif-frame-009.jpg" id="43_87qbf"]
 [ext_resource type="Texture2D" uid="uid://2l6a8bdeuiws" path="res://assets/dialogue/p5dialogue/ezgif-frame-010.jpg" id="44_3olj8"]
+[ext_resource type="Texture2D" uid="uid://m4c7m5tvgt4h" path="res://assets/ryuji/1 Red Shirt/0 Neutral/b002_000_01_e1.png" id="44_uxsqd"]
 [ext_resource type="Texture2D" uid="uid://c2y8yyynn8o6q" path="res://assets/dialogue/p5dialogue/ezgif-frame-011.jpg" id="45_ilf4v"]
+[ext_resource type="Texture2D" uid="uid://closxn3mdsk6t" path="res://assets/ryuji/1 Red Shirt/0 Neutral/b002_000_01_e2.png" id="45_jju5b"]
 [ext_resource type="Texture2D" uid="uid://bi7aiprivdj30" path="res://assets/dialogue/p5dialogue/ezgif-frame-012.jpg" id="46_sljek"]
 [ext_resource type="Texture2D" uid="uid://bru7rmsne8wor" path="res://assets/dialogue/p5dialogue/ezgif-frame-013.jpg" id="47_l4wgk"]
 [ext_resource type="Texture2D" uid="uid://25mfic4e3at0" path="res://assets/dialogue/p5dialogue/ezgif-frame-014.jpg" id="48_odcrq"]
@@ -53,8 +83,12 @@
 [ext_resource type="Texture2D" uid="uid://ncbh6tnm5uh" path="res://assets/dialogue/p5dialogue/ezgif-frame-016.jpg" id="50_70lob"]
 [ext_resource type="Texture2D" uid="uid://ct2b7scj5ym51" path="res://assets/dialogue/p5dialogue/ezgif-frame-017.jpg" id="51_uxsqd"]
 [ext_resource type="Texture2D" uid="uid://c6e4ljgdqhluj" path="res://assets/dialogue/p5dialogue/ezgif-frame-018.jpg" id="52_jju5b"]
+[ext_resource type="Texture2D" uid="uid://bt1xrmvskgv73" path="res://assets/futaba/3 Frowning/b008_003_04_e1.png" id="52_s1mdr"]
+[ext_resource type="Texture2D" uid="uid://bqgbfshvjf7a2" path="res://assets/futaba/3 Frowning/b008_003_04_e2.png" id="53_ljj8q"]
 [ext_resource type="Texture2D" uid="uid://bgkoho0327mmj" path="res://assets/dialogue/p5dialogue/ezgif-frame-019.jpg" id="53_tx3wh"]
+[ext_resource type="Texture2D" uid="uid://bg0sxqa0fxgo7" path="res://assets/ryuji/1 Red Shirt/1 Grinning/b002_001_01_e1.png" id="54_284f1"]
 [ext_resource type="Texture2D" uid="uid://cerxlssp0wnig" path="res://assets/dialogue/p5dialogue/ezgif-frame-020.jpg" id="54_cdyoq"]
+[ext_resource type="Texture2D" uid="uid://c34dhaem2au1n" path="res://assets/ryuji/1 Red Shirt/1 Grinning/b002_001_01_e2.png" id="55_mt203"]
 [ext_resource type="Texture2D" uid="uid://pyp5jqbuugy0" path="res://assets/dialogue/p5dialogue/ezgif-frame-021.jpg" id="55_xtypo"]
 [ext_resource type="Texture2D" uid="uid://b1ar0nkkq6lk" path="res://assets/dialogue/p5dialogue/ezgif-frame-022.jpg" id="56_3f4cq"]
 [ext_resource type="Texture2D" uid="uid://cttbuxf4uenjg" path="res://assets/dialogue/p5dialogue/ezgif-frame-023.jpg" id="57_441mk"]
@@ -62,6 +96,8 @@
 [ext_resource type="Texture2D" uid="uid://1q6sb5u6oaj5" path="res://assets/dialogue/p5dialogue/ezgif-frame-025.jpg" id="59_ys5g8"]
 [ext_resource type="Texture2D" uid="uid://c0me30af2ygdd" path="res://assets/dialogue/p5dialogue/ezgif-frame-026.jpg" id="60_k0d13"]
 [ext_resource type="Texture2D" uid="uid://db5pltk6cntof" path="res://assets/dialogue/p5dialogue/ezgif-frame-027.jpg" id="61_284f1"]
+[ext_resource type="Texture2D" uid="uid://dblcyq348oqrc" path="res://assets/ryuji/1 Red Shirt/4 Surprised/b002_004_01_e1.png" id="61_enyor"]
+[ext_resource type="Texture2D" uid="uid://l6yctyeww1y2" path="res://assets/ryuji/1 Red Shirt/4 Surprised/b002_004_01_e2.png" id="62_ad5ct"]
 [ext_resource type="Texture2D" uid="uid://xchoyek6oe5f" path="res://assets/dialogue/p5dialogue/ezgif-frame-028.jpg" id="62_mt203"]
 [ext_resource type="Texture2D" uid="uid://dtuxykju0y5wf" path="res://assets/dialogue/p5dialogue/ezgif-frame-029.jpg" id="63_bqtvt"]
 [ext_resource type="Texture2D" uid="uid://c7ruslhoi6ujr" path="res://assets/dialogue/p5dialogue/ezgif-frame-030.jpg" id="64_4msaq"]
@@ -72,6 +108,14 @@
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1337t"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_284f1")
+}],
+"loop": true,
+"name": &"akechi",
+"speed": 5.0
+}, {
 "frames": [],
 "loop": true,
 "name": &"default",
@@ -92,13 +136,63 @@ animations = [{
 "loop": true,
 "name": &"morgana",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_3olj8")
+}],
+"loop": true,
+"name": &"ryuji",
+"speed": 5.0
 }]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_mfr5y"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_284f1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_mt203")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_bqtvt")
+}],
+"loop": true,
+"name": &"akechi_happy",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_mt203")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_bqtvt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_4msaq")
+}],
+"loop": true,
+"name": &"akechi_sad",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_87qbf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_3olj8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ilf4v")
+}],
+"loop": true,
+"name": &"akechi_surprised",
+"speed": 5.0
+}, {
 "frames": [],
 "loop": true,
-"name": &"default",
+"name": &"default_",
 "speed": 5.0
 }, {
 "frames": [{
@@ -113,6 +207,20 @@ animations = [{
 }],
 "loop": true,
 "name": &"futaba_",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_yfdyw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_syu7e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_8e1s1")
+}],
+"loop": true,
+"name": &"futaba_sad",
 "speed": 5.0
 }, {
 "frames": [{
@@ -184,13 +292,97 @@ animations = [{
 "loop": true,
 "name": &"morgana_surprised",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("27_odcrq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_4nv50")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_70lob")
+}],
+"loop": true,
+"name": &"ryuji_frowning",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("36_i7sqd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_hdmc4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_cbt7t")
+}],
+"loop": true,
+"name": &"ryuji_shocked",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("33_262hu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_ys5g8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_k0d13")
+}],
+"loop": true,
+"name": &"ryuji_smiling",
+"speed": 5.0
 }]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_2jjgm"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("39_mt203")
+}],
+"loop": true,
+"name": &"akechi_happy",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 0.5,
+"texture": ExtResource("33_3f4cq")
+}, {
+"duration": 2.0,
+"texture": ExtResource("34_441mk")
+}, {
+"duration": 0.5,
+"texture": ExtResource("33_3f4cq")
+}, {
+"duration": 4.0,
+"texture": ExtResource("34_441mk")
+}],
+"loop": true,
+"name": &"akechi_sad",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.5,
+"texture": ExtResource("27_l4wgk")
+}, {
+"duration": 2.0,
+"texture": ExtResource("26_sljek")
+}, {
+"duration": 0.5,
+"texture": ExtResource("27_l4wgk")
+}, {
+"duration": 4.0,
+"texture": ExtResource("26_sljek")
+}],
+"loop": true,
+"name": &"akechi_surprised",
+"speed": 2.0
+}, {
 "frames": [],
 "loop": true,
-"name": &"default",
+"name": &"default_",
 "speed": 5.0
 }, {
 "frames": [{
@@ -209,6 +401,23 @@ animations = [{
 "loop": true,
 "name": &"futaba_",
 "speed": 2.0
+}, {
+"frames": [{
+"duration": 0.5,
+"texture": ExtResource("52_s1mdr")
+}, {
+"duration": 2.0,
+"texture": ExtResource("53_ljj8q")
+}, {
+"duration": 0.5,
+"texture": ExtResource("52_s1mdr")
+}, {
+"duration": 4.0,
+"texture": ExtResource("53_ljj8q")
+}],
+"loop": true,
+"name": &"futaba_sad",
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 0.5,
@@ -293,6 +502,57 @@ animations = [{
 }],
 "loop": true,
 "name": &"morgana_surprised",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 0.5,
+"texture": ExtResource("44_uxsqd")
+}, {
+"duration": 2.0,
+"texture": ExtResource("45_jju5b")
+}, {
+"duration": 0.5,
+"texture": ExtResource("44_uxsqd")
+}, {
+"duration": 2.0,
+"texture": ExtResource("45_jju5b")
+}],
+"loop": true,
+"name": &"ryuji_frowning",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 0.5,
+"texture": ExtResource("61_enyor")
+}, {
+"duration": 2.0,
+"texture": ExtResource("62_ad5ct")
+}, {
+"duration": 0.5,
+"texture": ExtResource("61_enyor")
+}, {
+"duration": 4.0,
+"texture": ExtResource("62_ad5ct")
+}],
+"loop": true,
+"name": &"ryuji_shocked",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.5,
+"texture": ExtResource("54_284f1")
+}, {
+"duration": 2.0,
+"texture": ExtResource("55_mt203")
+}, {
+"duration": 0.5,
+"texture": ExtResource("54_284f1")
+}, {
+"duration": 4.0,
+"texture": ExtResource("55_mt203")
+}],
+"loop": true,
+"name": &"ryuji_smiling",
 "speed": 2.0
 }]
 
@@ -500,21 +760,21 @@ scale = Vector2(1.12057, 1.12057)
 position = Vector2(307, 223)
 scale = Vector2(0.998872, 0.998872)
 sprite_frames = SubResource("SpriteFrames_1337t")
-animation = &"morgana"
 
 [node name="Mouth" type="AnimatedSprite2D" parent="Portrait"]
-position = Vector2(297, 314)
+position = Vector2(371.24, 334.651)
 scale = Vector2(0.998872, 0.998872)
 sprite_frames = SubResource("SpriteFrames_mfr5y")
+animation = &"default_"
 
 [node name="Eyes" type="AnimatedSprite2D" parent="Portrait"]
-position = Vector2(319, 144)
+position = Vector2(397.119, 235.594)
 sprite_frames = SubResource("SpriteFrames_2jjgm")
-animation = &"morgana_surprised"
+animation = &"default_"
 
 [node name="Dialogue Box" type="AnimatedSprite2D" parent="."]
 material = SubResource("ShaderMaterial_6g7dk")
-position = Vector2(689.16, 525)
+position = Vector2(715.16, 523)
 scale = Vector2(0.723083, 0.723083)
 sprite_frames = SubResource("SpriteFrames_w4rdd")
 animation = &"loop"
@@ -525,10 +785,10 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -1.84033
-offset_top = 56.0
-offset_right = -1.84033
-offset_bottom = 56.0
+offset_left = 24.1594
+offset_top = 54.0
+offset_right = 24.1594
+offset_bottom = 54.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_qq3yp")
@@ -597,10 +857,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -18.1597
-offset_top = -179.0
-offset_right = 562.84
-offset_bottom = -109.0
+offset_left = -69.1594
+offset_top = -193.0
+offset_right = 511.84
+offset_bottom = -123.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_vertical = 8

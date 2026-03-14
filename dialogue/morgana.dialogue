@@ -3,12 +3,19 @@ Morgana: [[Hi|Hello|Howdy]], [wave]this is some dialogue.[/wave] [#voice=00139]
 Futaba: Here are some choices. [#voice=01636]
 Futaba: [shake rate=20.0 level=10]Make a choice nowww !![/shake] [#emotion=scowling] [#voice=01665]
 - First one
-	Morgana: You picked the first one. [#emotion=surprised] [#voice=00179]
-	- Start again => start
-	- End the conversation
+	if check1:
+		Morgana: You picked the first one. [#voice=00167]
+	else:
+		Morgana: Check 1 is not enabled :((((( [#emotion=surprised] [#voice=00179]
+		- Start again => start
+		- End the conversation
 - Second one
-	Morgana: You picked the second one. [#emotion=scowling] [#voice=00183]
-	- Start again => start
-	- End the conversation
+	if num2 >= 5:
+		Morgana: You picked the second one. [#voice=00173]
+	else:
+		Morgana: You currently have {{num2}}. You need 5 to continue!! [#emotion=surprised] [#voice=00179]
+		- Start again => start
+		- End the conversation
 Morgana: For more information see the online documentation.[#voice=00222]
+- Start again => start
 => END

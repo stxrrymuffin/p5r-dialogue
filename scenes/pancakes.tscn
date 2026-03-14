@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://c1uips72sdgju"]
+
+[ext_resource type="Script" uid="uid://cet1w7i7lu7u0" path="res://scenes/pancakes.gd" id="1_a4wu7"]
+[ext_resource type="Texture2D" uid="uid://dyjxg4jmihyu5" path="res://assets/dialogue/leblanc_blurred.png" id="2_vmfn0"]
+[ext_resource type="AudioStream" uid="uid://qammpvxhxf8l" path="res://assets/audio/1-29. Beneath the Mask.mp3" id="3_dxa8i"]
+
+[node name="pancakes" type="Node2D"]
+script = ExtResource("1_a4wu7")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.400088, 0.400088)
+texture = ExtResource("2_vmfn0")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_dxa8i")
+autoplay = true

@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://cspfdbv8xgqmb"
+path="res://.godot/imported/akechi.dialogue-7b864922b1d967efa42ce445876857b3.tres"
+
+[deps]
+
+source_file="res://dialogue/akechi.dialogue"
+dest_files=["res://.godot/imported/akechi.dialogue-7b864922b1d967efa42ce445876857b3.tres"]
+
+[params]
+
+defaults=true
